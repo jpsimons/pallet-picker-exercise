@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="picker">
+      <section>
+        <div class="num">1</div>
+        <div class="step-inner">
+          <header>Request Move Date</header>
+        </div>
+      </section>
+      <section>
+        <div class="num">2</div>
+        <div class="step-inner">
+          <header>Add to Pallet Selection List</header>
+          <p>Type to Find Item, SKU or Pallet#, Then Select to Add</p>
+          <form>
+            <input type="text" class="inventory-selector">
+            <ul class="inventory-matches"></ul>
+          </form>
+        </div>
+      </section>
+      <section>
+        <div class="num">3</div>
+        <div class="step-inner">
+          <header>Choose From Pallet Selection List</header>
+          <div class="selected-product">
+            <label></label>
+            <button class="selected-product-done">Done</button>
+          </div>
+          <table class="matching-pallets">
+            <thead>
+              <tr>
+                <th>Pallet #</th>
+                <th>Item Code</th>
+                <th>Select For Pickup</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="num">4</div>
+        <div class="step-inner">
+          <header>Review Pallets Selected For Pickup</header>
+          <table class="selected-pallets">
+            <thead>
+              <tr>
+                <th>Pallet #</th>
+                <th>Item Code</th>
+                <th>Select For Pickup</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="num">5</div>
+        <div class="step-inner">
+          <header>Finalize Your Request</header>
+          <p>Brief description of item being returned</p>
+          <textarea></textarea>
+        </div>
+      </section>
+      <section>
+        <div class="step-inner">
+          <input type="submit" value="Confirm and Schedule">
+          &nbsp;
+          <a href="#">Cancel</a>
+        </div>
+      </section>
+    </div>
+    
+    <script src="/static/js.js"></script>
+    
+  </body>
+</html>
